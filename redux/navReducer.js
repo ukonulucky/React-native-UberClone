@@ -4,7 +4,7 @@ const createNavSlice = createSlice({
     name: "navSliceReducer",
     initialState: {
         origin: null,
-        destiination: null,
+        destination: null,
         travelTime: null
     },
     reducer: {
@@ -12,7 +12,7 @@ const createNavSlice = createSlice({
            state.origin = action.payload
         },
         setDestination:(state, action)  => {
-          state.destiination = action.payload
+          state.destination = action.payload
         },
         setTravelTime: (state, action) => {
           state.travelTime = action.payload
@@ -24,6 +24,5 @@ const createNavSlice = createSlice({
 
 export const { setDestination, setOrigin, setTravelTime } = createNavSlice.actions
 
-const navSliceReducer = createNavSlice.reducer
+export const navSliceReducer = createNavSlice.reducer
 
-export default navSliceReducer
