@@ -9,7 +9,7 @@ const data = [
         id: 1,
         title: "Get a ride",
         image: "https://www.uber-assets.com/image/upload/f_auto,q_auto:eco,c_fill,w_485,h_385/f_auto,q_auto/products/carousel/UberX.png",
-        screen:"MapScreen"
+        screen:"RideScreen"
     },
     {
         id: 2,
@@ -32,7 +32,6 @@ const NavOptions = () => {
               return <TouchableOpacity
                   style={tw`p-2 pl-6 pb-8 pt-4 bg-gray-200 m-2 w-40 `}
                   onPress={() => {
-                      console.log("just ran")
                       navigation.navigate(item.screen)
                   }}
               >

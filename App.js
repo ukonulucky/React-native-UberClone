@@ -6,7 +6,8 @@ import HomeScreen from './screens/HomeScreen';
 import { NavigationContainer } from "@react-navigation/native"
 import { SafeAreaProvider } from "react-native-safe-area-context"
 import { createNativeStackNavigator } from "@react-navigation/native-stack"
-import MapScreen from './screens/MapScreen';
+import EatScreen from './screens/EatSCreen';
+import RideScreen from './screens/RideScreen';
 
 const Stack = createNativeStackNavigator()
 export default function App() {
@@ -16,15 +17,22 @@ export default function App() {
         <SafeAreaProvider>
         <Stack.Navigator>
             <Stack.Screen
-              name='Home'
+              name='HomeScreen'
               component={HomeScreen}
               options={{
                 headerShown: false
               } }
             />
             <Stack.Screen
-              component={MapScreen}
-              name="MapScreen"
+              component={RideScreen}
+              name="RideScreen"
+              options={{
+                headerShown:false
+              }}
+            />
+             <Stack.Screen
+              component={EatScreen}
+              name="EatScreen"
               options={{
                 headerShown:false
               }}
