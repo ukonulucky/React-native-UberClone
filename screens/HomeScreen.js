@@ -2,6 +2,8 @@ import { StyleSheet, Text, View , SafeAreaView, Image} from 'react-native'
 import React from 'react'
 import tw from 'tailwind-react-native-classnames';
 import NavOptions from '../components/NavOptions';
+import { GooglePlacesAutocomplete } from 'react-native-google-places-autocomplete';
+
 
 const HomeScreen = () => {
   return (
@@ -21,7 +23,6 @@ const HomeScreen = () => {
     </SafeAreaView>
   )
 }
- 
-export default HomeScreen
 
-const styles = StyleSheet.create({})
+
+export default HomeScreen

@@ -1,12 +1,11 @@
-
 import { StyleSheet, Text, View } from 'react-native';
 import store from "./redux/store"
 import { Provider } from 'react-redux'; 
-import HomeScreen from './screens/HomeScreen';
+// import HomeScreen from './screens/HomeScreen';
 import { NavigationContainer } from "@react-navigation/native"
 import { SafeAreaProvider } from "react-native-safe-area-context"
 import { createNativeStackNavigator } from "@react-navigation/native-stack"
-import EatScreen from './screens/EatSCreen';
+import EatScreen from './screens/EatScreen';
 import RideScreen from './screens/RideScreen';
 
 const Stack = createNativeStackNavigator()
@@ -16,13 +15,13 @@ export default function App() {
       <NavigationContainer>
         <SafeAreaProvider>
         <Stack.Navigator>
-            <Stack.Screen
+            {/* <Stack.Screen
               name='HomeScreen'
               component={HomeScreen}
               options={{
                 headerShown: false
               } }
-            />
+            /> */}
             <Stack.Screen
               component={RideScreen}
               name="RideScreen"

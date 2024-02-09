@@ -7,7 +7,7 @@ import { useNavigation } from '@react-navigation/native'
 const data = [
     {
         id: 1,
-        title: "Get a ride",
+        title: "Get Ride Now",
         image: "https://www.uber-assets.com/image/upload/f_auto,q_auto:eco,c_fill,w_485,h_385/f_auto,q_auto/products/carousel/UberX.png",
         screen:"RideScreen"
     },
